@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
 body{
     margin: 0;
     min-height: 100vh;
@@ -17,6 +22,7 @@ main{
 #notifications-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #notifications-label{
     font-size: 1.3rem;
@@ -33,6 +39,9 @@ main{
     border-radius: 0.7rem;
     padding: 1rem;
 }
+.new-notification:last-of-type, .notification:last-of-type{
+    margin-bottom: 0;
+}
 .new-notification{
     background-color: hsl(210, 60%, 98%);
 }
@@ -48,14 +57,17 @@ main{
 }
 .picture-comment{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+.picture-comment ~ .day{
+    margin-top: -1rem;
 }
 .commented-picture{
     width: 2.5rem;
     height: 2.5rem;
 }
 .name, #notifications-label{
+    font-family: "Plus Jakarta Sans", serif;
     color: hsl(224, 21%, 14%);
 }
 .info{
@@ -74,7 +86,7 @@ main{
     font-weight: 600;
 }
 .name{
-    font-weight: 700;
+    font-variation-settings: "wght" 700;
 }
 .name:hover, .post-name:hover, .mark-all-button:hover{
     color:hsl(219, 85%, 26%);
