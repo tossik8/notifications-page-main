@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <title>Frontend Mentor | Notifications page</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js"></script>
 </head>
 <body>
 
   <main>
     <div class="panel">
       <div id="notifications-header">
-        <h1 id="notifications-label">Notifications</h1>
-        <button class="mark-all-button">Mark all as read</button>
+        <div class="notifications-div">
+          <h1 id="notifications-label">Notifications</h1>
+          <p class="notifications-count"></p>
+        </div>
+
+        <button onclick="markAllRead()" class="mark-all-button">Mark all as read</button>
       </div>
       <section id="content-section">
         <article class="new-notification">

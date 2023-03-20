@@ -24,8 +24,20 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+.notifications-div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 #notifications-label{
     font-size: 1.3rem;
+}
+.notifications-count{
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.5rem;
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Plus Jakarta Sans", serif;
 }
 .mark-all-button{
     background-color: transparent;
@@ -59,12 +71,10 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.picture-comment ~ .day{
-    margin-top: -1rem;
-}
+
 .commented-picture{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 .name, #notifications-label{
     font-family: "Plus Jakarta Sans", serif;
