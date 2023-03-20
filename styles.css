@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(210, 60%, 98%);
+    background-color: hsl(280, 60%, 98%); /*hsl(211, 68%, 94%)*/
     font-family: "Plus Jakarta Sans", serif;
 }
 main{
