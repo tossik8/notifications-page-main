@@ -2,8 +2,8 @@ let notificationCount = 0;
 
 
 window.onload = () => {
-    notificationCount = document.getElementsByClassName("new-notification").length
     const notifications = Array.from(document.getElementsByClassName("new-notification"));
+    notificationCount = notifications.length;
     for(let notification of notifications){
         notification.addEventListener("click", () => markRead(notification));
     }
