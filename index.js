@@ -16,12 +16,14 @@ function markAllRead(){
     }
 }
 function markRead(notification){
-    notification.classList.remove("new-notification");
-    notification.classList.add("notification");
-    notification.getElementsByClassName("red-dot")[0].remove();
-    --notificationCount;
-    setNotificationsLabel();
-    notification.removeEventListener("click", markRead);
+    if(!notification.classList.contains("notification")){
+        notification.classList.remove("new-notification");
+        notification.classList.add("notification");
+        notification.getElementsByClassName("red-dot")[0].remove();
+        --notificationCount;
+        setNotificationsLabel();
+    }
+
 }
 function setNotificationsLabel(){
     document.getElementsByClassName("notifications-count")[0].textContent = notificationCount;
